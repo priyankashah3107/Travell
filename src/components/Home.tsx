@@ -39,6 +39,9 @@ const HomeData = [
   }
 ]
 
+{/* <Menu />
+      <Cross /> */}
+
 const Home = () => {
   return (
     <>
