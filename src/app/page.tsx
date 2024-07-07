@@ -8,8 +8,8 @@ const page = () => {
     <>
      <div>
       <Home />
-      <Activity />
-      <Destination />
+      {/* <Activity />
+      <Destination /> */}
       
       
       
