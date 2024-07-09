@@ -7,7 +7,7 @@ import { Button } from "./ui/button"
 const InputDemo = () => {
   return (
     <div className="absolute left-0 lg:bottom-4 lg:left-24  text-white gap-4  items-center justify-center ">
-       <div className="w-screen  bg-[#015950] lg:bg-transparent">
+       <div className="  bg-[#015950] lg:bg-transparent w-screen ">
 
        
       <h1 className="text-[28px] lg:text-[40px] font-bold font-['Playfair_Display'] leading-[60px] text-center">Plan your travel now</h1>

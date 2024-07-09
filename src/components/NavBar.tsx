@@ -23,7 +23,7 @@ const NavBar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full text-white z-50 bg-transparent lg:pl-20">
+    <nav className="fixed top-0 left-0 w-screen text-white z-50 bg-transparent lg:pl-20">
       <div className='container mx-auto flex flex-row items-center justify-between p-4'>
         <div className="flex flex-row items-center">
           <Image src={"/logo.svg"} alt='img' width={22} height={28} className='w-8 h-auto ' />

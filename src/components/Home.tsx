@@ -47,11 +47,12 @@ import React from 'react';
 import NavBar from './NavBar';
 import "../index.css";
 import InputDemo from './InputDemo';
+import Activity from './Activity';
 
 const Home: React.FC = () => {
   return (
     <>
-      <section className='relative'>
+      <section className='relative w-screen'>
         <div className="mx-auto">
           <NavBar />
           <div className='relative w-full h-screen'>
@@ -67,6 +68,7 @@ const Home: React.FC = () => {
             </div>
           </div>
           <InputDemo />
+          {/* <Activity /> */}
         </div>
       </section>
     </>

@@ -41,10 +41,20 @@ const adven = [
 
 ]
 
-const Activity = () => {
+const Activity: React.FC = () => {
   return (
-    <div> 
-      ppppp
+    <div className="absolute bg-[#17C3B2] text-white mt-96 lg:mt-0 t"> 
+        
+        <div>
+          {activity.map((val, idx) => (
+            <div key={idx}> 
+              <h4>{val.name}</h4>
+              <h1>{val.titl}</h1>
+              <p>{val.desc}</p>
+            </div>
+          ))}
+        </div>
+        <div>icons</div>
     </div>
   )
 }
