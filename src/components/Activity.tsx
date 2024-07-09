@@ -1,7 +1,8 @@
 
 import { Mountain, Star, TentIcon } from 'lucide-react'
 import React from 'react'
-
+import Image from 'next/image'
+import Destination from "../components/Destination"
 const activity = [
   {
     id: 1,
@@ -43,19 +44,31 @@ const adven = [
 
 const Activity: React.FC = () => {
   return (
-    <div className="absolute bg-[#17C3B2] text-white mt-96 lg:mt-0 t"> 
+    <div className="absolute  text-white  "> 
         
-        <div>
+        <div className='bg-[#17C3B2]'>
           {activity.map((val, idx) => (
-            <div key={idx}> 
-              <h4>{val.name}</h4>
-              <h1>{val.titl}</h1>
-              <p>{val.desc}</p>
+            <div key={idx} className='p-4 lg:p-14'> 
+              <h4 className="text-[#0E3D4D] text-xl font-medium lg:font-medium font-['DM Sans'] uppercase leading-[30px]">{val.name}</h4>
+              <h1 className="text-[40px] lg:text-[50px] font-semibold font-['Playfair_Display'] leading-[44px] lg:leading-[75px]">{val.titl}</h1>
+              <p className="text-[#0E3D4D] text-lg lg:text-xl font-normal font-['Roboto'] leading-[27px] lg:leading-[30px]">{val.desc}</p>
             </div>
           ))}
         </div>
-        <div>icons</div>
+        
+        <div className="p-4 lg:p-14 flex flex-col lg:flex-row bg-[#17C3B2]">
+          {adven.map((val, idx) => (
+             <div key={idx} className='flex flex-col items-center  text-center'>
+              <Image src={val.icon} alt="img" width={50} height={80} />
+
+              <h1 className=" text-3xl text-center lg:text-left lg:text-4xl font-bold font-['Playfair_Display'] leading-[45px] lg:leading-[54px]">{val.name}</h1>
+              <p className=" text-[#073D37] text-lg lg:text-xl font-normal font-['Roboto'] leading-[27px] lg:leading-[30px]">{val.desc}</p>
+             </div>
+          ))}
+        </div>
+        <Destination />
     </div>
+    
   )
 }
 

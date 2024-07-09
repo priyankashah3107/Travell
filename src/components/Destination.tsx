@@ -56,27 +56,40 @@ const advan = [
   },
 ]
 
+// const Destination: React.FC = () => {
+//   return (
+//     <div className="activity-container absolute mt-96 -bottom-10 ">
+//     {advan.map((activity) => (
+//       <div className="activity-card" key={activity.id}>
+//         <img src={activity.photo} alt={activity.name} className="activity-photo" />
+//         <div className="activity-content">
+//           <img src={activity.icon} alt="icon" className="activity-icon" />
+//           <h1 className="activity-name">{activity.name}</h1>
+//           <p className="activity-location">{activity.loc}</p>
+//           <p className="activity-price">{activity.price}</p>
+//           <div className="activity-stars">
+//             {[...Array(4)].map((_, i) => (
+//               <img key={i} src={activity.stars.yellow} alt="yellow star" className="star-icon" />
+//             ))}
+//             <img src={activity.stars.white} alt="white star" className="star-icon" />
+//           </div>
+//         </div>
+//       </div>
+//     ))}
+//   </div>
+//   )
+// }
+
+// export default Destination
+
+
+
+
 const Destination = () => {
   return (
-    <div className="activity-container">
-    {advan.map((activity) => (
-      <div className="activity-card" key={activity.id}>
-        <img src={activity.photo} alt={activity.name} className="activity-photo" />
-        <div className="activity-content">
-          <img src={activity.icon} alt="icon" className="activity-icon" />
-          <h1 className="activity-name">{activity.name}</h1>
-          <p className="activity-location">{activity.loc}</p>
-          <p className="activity-price">{activity.price}</p>
-          <div className="activity-stars">
-            {[...Array(4)].map((_, i) => (
-              <img key={i} src={activity.stars.yellow} alt="yellow star" className="star-icon" />
-            ))}
-            <img src={activity.stars.white} alt="white star" className="star-icon" />
-          </div>
-        </div>
-      </div>
-    ))}
-  </div>
+    <div className=' text-red-600'>
+      OOOOOOOOOOOOOOOOO
+    </div>
   )
 }
 

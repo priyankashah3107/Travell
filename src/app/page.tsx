@@ -9,7 +9,7 @@ const page = () => {
      <div className='relative'>
       <Home />
      <Activity />
-     {/* <Destination /> */}
+     <Destination />
       
       
       
