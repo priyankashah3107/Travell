@@ -40,6 +40,8 @@ const adven = [
   desc: "25 diverse destinations, historical cities, hidden gems, unique charm"
 },
 
+
+
 ]
 
 const Activity: React.FC = () => {

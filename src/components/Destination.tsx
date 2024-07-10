@@ -1,94 +1,42 @@
 
 import React from 'react'
 import "@/index.css"
+import MyCard from './MyCard'
 
-const advan = [
+
+const descr = [
   {
     id: 1,
-    photo: "/pyramid.png",
-    name: "Cairo",
-    icon: "/egypt_ico.svg",
-    loc: "EGYPT",
-    price: "Price starts at €105.00",
-    stars: {
-      yellow: "/yellow.svg",
-      white: "/white.svg"
-    }
-  },
-
-  {
-    id: 2,
-    photo: "/Paris.png",
-    name: "Paris",
-    icon: "/france_icon.svg",
-    loc: "FRANCE",
-    price: "Price starts at €95.00",
-    stars: {
-      yellow: "/yellow.svg",
-      white: "/white.svg"
-    }
-  },
-
-  {
-    id: 3,
-    photo: "/Rome.png",
-    name: "Rome",
-    icon: "/italy_icon.svg",
-    loc: "ITALY",
-    price: "Price starts at €75.00",
-    stars: {
-      yellow: "/yellow.svg",
-      white: "/white.svg"
-    }
-  },
-
-  {
-    id: 4,
-    photo: "/Madrid.png",
-    name: "Madrid",
-    icon: "/spain_icon.svg",
-    loc: "ESPAIN",
-    price: "Price starts at €87.00",
-    stars: {
-      yellow: "/yellow.svg",
-      white: "/white.svg"
-    }
-  },
+    name: "Where to go",
+    title: "Popular destinations",
+    desc: "Explore our curated selection of the world's most sought-after travel spots in this diverse list of must-visit places. From iconic cities to pristine natural wonders, we've gathered the best destinations to ignite your wanderlust."
+  }
 ]
 
-// const Destination: React.FC = () => {
-//   return (
-//     <div className="activity-container absolute mt-96 -bottom-10 ">
-//     {advan.map((activity) => (
-//       <div className="activity-card" key={activity.id}>
-//         <img src={activity.photo} alt={activity.name} className="activity-photo" />
-//         <div className="activity-content">
-//           <img src={activity.icon} alt="icon" className="activity-icon" />
-//           <h1 className="activity-name">{activity.name}</h1>
-//           <p className="activity-location">{activity.loc}</p>
-//           <p className="activity-price">{activity.price}</p>
-//           <div className="activity-stars">
-//             {[...Array(4)].map((_, i) => (
-//               <img key={i} src={activity.stars.yellow} alt="yellow star" className="star-icon" />
-//             ))}
-//             <img src={activity.stars.white} alt="white star" className="star-icon" />
-//           </div>
-//         </div>
-//       </div>
-//     ))}
-//   </div>
-//   )
-// }
-
-// export default Destination
 
 
 
 
 const Destination = () => {
+ 
   return (
-    <div className=' text-red-600'>
-      OOOOOOOOOOOOOOOOO
+    <div className="bg-white">
+         
+         <div>
+          {descr.map((val, idx) => (
+             <div className="text-[#333333] p-4 lg:p-14 " key={idx}>
+              <h4 className="uppercase text-[#17C3B2] text-lg lg:text-xl font-medium font-['DM Sans'] leading-[27px] lg:leading-[30px]">{val.name}</h4>
+
+              <h1 className="text-[35px] lg:text-[50px] font-semibold font-['Playfair_Display'] leading-[35px] lg:leading-[60px]">{val.title}</h1>
+              <p className="text-lg lg:text-xl font-normal font-['Roboto'] leading-[27px] lg:leading-[30px]">{val.desc}</p>
+             </div>
+          ))}
+         </div>
+
+
+           <div className='text-black'>
+            <MyCard />
+           </div>
     </div>
   )
 }

@@ -84,3 +84,13 @@
   width: 100vw;
   height: 100vh;
 }
+
+
+.pre-btn , .next-btn{
+  color: #17C3B2;
+}
+
+.pre-btn, .next-btn:hover{
+  color: #096ddf;
+
+}
