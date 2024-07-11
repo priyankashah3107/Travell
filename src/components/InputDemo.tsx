@@ -6,12 +6,12 @@ import { Button } from "./ui/button"
 
 const InputDemo = () => {
   return (
-    <div className="  text-white bg-black opacity-9 ">
+    <div className="text-white bg-black opacity-9 ">
        <div className="  bg-[#015950] h-screen lg:h-44 lg:bg-transparent w-screen ">
 
        
       <h1 className="text-[28px] lg:text-[40px] font-bold font-['Playfair_Display'] leading-[60px] text-center">Plan your travel now</h1>
-        <div className="  lg:h-full flex flex-col lg:flex-row gap-6 lg:pl-20">
+        <div className="  lg:h-full flex flex-col lg:flex-row gap-6 p-10 lg:pl-20">
         <label>
         Search Destination*
         <Input type="text" placeholder="Enter Destination" />

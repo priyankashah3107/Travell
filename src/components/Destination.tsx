@@ -20,7 +20,7 @@ const descr = [
 const Destination = () => {
  
   return (
-    <div className="bg-white">
+    <div className="bg-white w-screen">
          
          <div>
           {descr.map((val, idx) => (

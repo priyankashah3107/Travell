@@ -3,6 +3,7 @@ import { Mountain, Star, TentIcon } from 'lucide-react'
 import React from 'react'
 import Image from 'next/image'
 import Destination from "../components/Destination"
+import NewAndBlog from './NewAndBlog'
 const activity = [
   {
     id: 1,
@@ -46,9 +47,9 @@ const adven = [
 
 const Activity: React.FC = () => {
   return (
-    <div className="absolute  text-white  "> 
+    <div className="absolute  text-white w-screen "> 
         
-        <div className='bg-[#17C3B2]'>
+        <div className='bg-[#17C3B2] '>
           {activity.map((val, idx) => (
             <div key={idx} className='p-4 lg:p-14'> 
               <h4 className="text-[#0E3D4D] text-xl font-medium lg:font-medium font-['DM Sans'] uppercase leading-[30px]">{val.name}</h4>
@@ -69,6 +70,7 @@ const Activity: React.FC = () => {
           ))}
         </div>
         <Destination />
+        <NewAndBlog />
     </div>
     
   )

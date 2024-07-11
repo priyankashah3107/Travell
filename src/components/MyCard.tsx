@@ -243,10 +243,10 @@ const MyCard: React.FC = () => {
 
   return (
     <div className='relative flex flex-col items-center justify-center  '>
-      <button onClick={handlePrevClick} className="pre-btn hidden lg:block  absolute left-0 z-10 ">
+      <button onClick={handlePrevClick} className="pre-btn hidden lg:block ml-12  absolute left-0 z-10 ">
         <ArrowLeftCircle size={32} />
       </button>
-      <button onClick={handleNextClick} className="next-btn hidden lg:block  absolute right-0 z-10 ">
+      <button onClick={handleNextClick} className="next-btn hidden lg:block mr-14 absolute right-0 z-10 ">
         <ArrowRightCircle size={32} />
       </button>
 
