@@ -44,9 +44,9 @@ const HappyClient = () => {
             <p className="lg:m-8  lg:mt-2  text-[15px] lg:text-lg font-normal font-['Roboto'] leading-snug lg:leading-[27px]">{client.desc}</p>
             <div className='flex gap-2 mt-4 mb-4'>
               {[...Array(4)].map((_, i) => (
-                <img key={i} src={client.stars.yellow} alt="yellow star" width={24} height={24} />
+                <Image key={i} src={client.stars.yellow} alt="yellow star" width={24} height={24} />
               ))}
-              <img src={client.stars.white} alt="white star" width={24} height={24} />
+              <Image src={client.stars.white} alt="white star" width={24} height={24} />
             </div>
             <h2 className="text-lg font-bold font-['Roboto'] leading-tight">{client.name}</h2>
             <p className="mb-6 lg:mb-0 text-[#aaaaaa] opacity-90 lg:text-lg font-normal font-['Roboto'] leading-tight">{client.post}</p>

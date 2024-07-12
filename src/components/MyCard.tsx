@@ -1,164 +1,8 @@
-// import React from 'react'
-// import Image from 'next/image'
-// import { ArrowLeftCircle, ArrowRightCircle } from 'lucide-react'
-// import "@/index.css"
-
-// const advan = [
-//   {
-//     id: 1,
-//     photo: "/pyramid.png",
-//     name: "Cairo",
-//     icon: "/egypt_ico.svg",
-//     loc: "EGYPT",
-//     price: "Price starts at €105.00",
-//     stars: {
-//       yellow: "/yellow.svg",
-//       white: "/white.svg"
-//     }
-//   },
-
-//   {
-//     id: 2,
-//     photo: "/Paris.png",
-//     name: "Paris",
-//     icon: "/france_icon.svg",
-//     loc: "FRANCE",
-//     price: "Price starts at €95.00",
-//     stars: {
-//       yellow: "/yellow.svg",
-//       white: "/white.svg"
-//     }
-//   },
-
-//   {
-//     id: 3,
-//     photo: "/Rome.png",
-//     name: "Rome",
-//     icon: "/italy_icon.svg",
-//     loc: "ITALY",
-//     price: "Price starts at €75.00",
-//     stars: {
-//       yellow: "/yellow.svg",
-//       white: "/white.svg"
-//     }
-//   },
-
-//   {
-//     id: 4,
-//     photo: "/Madrid.png",
-//     name: "Madrid",
-//     icon: "/spain_icon.svg",
-//     loc: "ESPAIN",
-//     price: "Price starts at €87.00",
-//     stars: {
-//       yellow: "/yellow.svg",
-//       white: "/white.svg"
-//     }
-//   },
-
-//   {
-//     id: 5,
-//     photo: "/Madrid.png",
-//     name: "Madrid",
-//     icon: "/spain_icon.svg",
-//     loc: "ESPAIN",
-//     price: "Price starts at €87.00",
-//     stars: {
-//       yellow: "/yellow.svg",
-//       white: "/white.svg"
-//     }
-//   },
-
-//   {
-//     id: 6,
-//     photo: "/Madrid.png",
-//     name: "Madrid",
-//     icon: "/spain_icon.svg",
-//     loc: "ESPAIN",
-//     price: "Price starts at €87.00",
-//     stars: {
-//       yellow: "/yellow.svg",
-//       white: "/white.svg"
-//     }
-//   },
-//   {
-//     id: 7,
-//     photo: "/Madrid.png",
-//     name: "Madrid",
-//     icon: "/spain_icon.svg",
-//     loc: "ESPAIN",
-//     price: "Price starts at €87.00",
-//     stars: {
-//       yellow: "/yellow.svg",
-//       white: "/white.svg"
-//     }
-//   },
-//   {
-//     id: 8,
-//     photo: "/Madrid.png",
-//     name: "Madrid",
-//     icon: "/spain_icon.svg",
-//     loc: "ESPAIN",
-//     price: "Price starts at €87.00",
-//     stars: {
-//       yellow: "/yellow.svg",
-//       white: "/white.svg"
-//     }
-//   },
-// ]
-
-
-// const MyCard = () => {
-//   return (
-//     <>
-    
-//     <div className=' flex flex-col lg:flex-row gap-6 items-center text-black'>
-//     <div>
-//       <button className="pre-btn "> <ArrowLeftCircle /> </button>
-//       <button className="next-btn"><ArrowRightCircle /> </button>
-//       </div>
-
-//       {advan.map((val, idx) => (
-
-         
-//              <div key={idx} className=''>
-//               <Image src={val.photo} alt={"img"} width={300} height={400} />
-
-//                 <div className='flex flex-col'>
-//                   <h1>{val.name}</h1>
-//                   <Image src={val.icon}  alt='icon' width={30} height={10}/>
-
-//                   <div className=''>
-//                      <p>{val.loc}</p>
-//                      <p>{val.price}</p>
-//                   </div>
-                  
-//                   <div className="activity-stars">
-//              {[...Array(4)].map((_, i) => (
-//                <img key={i} src={val.stars.yellow} alt="yellow star" className="star-icon" />
-//              ))}
-//              <img src={val.stars.white} alt="white star" className="star-icon" />
-//            </div>
-//                 </div>
-//              </div>
-        
-
-         
-//       ))}
-//     </div>
-    
-//     </>
-//   )
-// }
-
-// export default MyCard
-
 "use client"
 import React, { useRef } from 'react';
 import Image from 'next/image';
 import { ArrowLeftCircle, ArrowRightCircle } from 'lucide-react';
 import "@/index.css";
-
 
 interface Destination {
   id: number;
@@ -268,9 +112,9 @@ const MyCard: React.FC = () => {
               </div>
               <div className="activity-stars flex">
                 {[...Array(4)].map((_, i) => (
-                  <img key={i} src={destination.stars.yellow} alt="yellow star" className="star-icon" />
+                  <Image key={i} src={destination.stars.yellow} alt="yellow star" className="star-icon" width={30} height={30} />
                 ))}
-                <img src={destination.stars.white} alt="white star" className="star-icon" />
+                <Image src={destination.stars.white} alt="white star" className="star-icon" width={30} height={30} />
               </div>
             </div>
           </div>

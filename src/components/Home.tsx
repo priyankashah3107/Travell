@@ -62,8 +62,8 @@ const Home: React.FC = () => {
                 Welcome to the World <span>of Extraordinary Travel</span>
               </h1>
               <p className="mt-3 text-base lg:text-xl font-normal font-['Roboto']">
-                If you're in search of exciting adventures, unforgettable experiences, and <br  className='hidden'/>
-                <span>breathtaking places to explore, you've come to the right place!</span>
+                If you<p>&#39</p>re in search of exciting adventures, unforgettable experiences, and <br  className='hidden'/>
+                <span>breathtaking places to explore, you &lsquo ve come to the right place!</span>
               </p>
             </div>
           </div>
