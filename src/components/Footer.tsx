@@ -1,7 +1,35 @@
 import React from 'react'
+import "@/index.css"
+import Image from 'next/image'
 
 
-const foo = [
+interface Foo {
+  id: number,
+  call: string,
+  phone: string
+}
+
+interface Company {
+  id: number,
+  name: string,
+}
+
+interface Support {
+  id: number,
+  name: string
+}
+
+interface Serviecs {
+  id: number, 
+  name: string,
+}
+
+interface TopCities{
+  id: number, 
+  name: string
+}
+
+const foo: Foo[] = [
    {
     id: 1,
     call: "Call 24/7 for any help",
@@ -40,7 +68,7 @@ const foo = [
 
 
 
-const company = [
+const company: Company[] = [
   {
     id: 1, 
     name: "About Us"
@@ -68,7 +96,7 @@ const company = [
 
 ]
 
-const support = [
+const support: Support[] = [
   {
     id: 1, 
     name: "Account"
@@ -96,7 +124,7 @@ const support = [
 
 ]
 
-const services = [
+const services: Serviecs[] = [
   {
     id: 1, 
     name: "Coomunity Program"
@@ -124,7 +152,7 @@ const services = [
 
 ]
 
-const topcities = [
+const topcities: TopCities[] = [
   {
     id: 1, 
     name: "Rome"
@@ -154,7 +182,76 @@ const topcities = [
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className="bg-[#073D37] lg:bg-[#f5f5f5] text-white lg:text-[#666666] flex flex-col lg:flex-row justify-between  p-4 lg:p-16">
+
+      <div className="text-center flex flex-col justify-center items-center mb-14">
+        <b>NEED ANY HELP?</b>
+        <div className=''>{foo.slice(0,1).map((val) => (
+           <div key={val.id} className="flex flex-col mt-4 ">
+            <p className="lg:text-[#666666]  text-base font-normal font-['Roboto']">{val.call}</p>
+            <p className="text-teal-500 text-[22px] font-medium font-['Roboto']">{val.phone}</p>
+           </div>
+        ))}</div>
+        
+        {foo.slice(1,2).map((val) => (
+            <div key={val.id}  className="flex flex-col mt-4 ">
+              <h3 className="lg:text-[#666666]  text-base font-normal font-['Roboto']">{val.call}</h3>
+              <p className="text-teal-500 text-[22px] font-medium font-['Roboto']">{val.phone}</p>
+            </div>
+        ))}
+
+{foo.slice(2, 3).map((val) => (
+          <div key={val.id}  className="flex flex-col mt-4  gap-4 lg:gap-2">
+            <h3 className="lg:text-[#666666]  text-base font-normal font-['Roboto']">{val.call}</h3>
+            <div className="flex space-x-2">
+              {val.icons.map((icon) => (
+                <Image key={icon.id} src={icon.icon} width={6} height={6} alt="social icon" className="w-6 h-6" />
+              ))}
+            </div>
+          </div>
+        ))}
+        
+      </div>
+
+
+      <div className='grid grid-cols-2 lg:grid-cols-4 gap-16 md:pl-10   lg:gap-20'>
+          
+          <div>
+            <h1 className="text-[#17c3b2] lg:text-black text-lg font-medium font-['Roboto'] uppercase leading-[45px]">COMPANY</h1>
+            {company.map((val) => (
+             <div key={val.id}>
+              <p className="text-white lg:text-[#666666] text-base font-normal font-['Roboto'] leading-[33.60px]">{val.name}</p>
+             </div>
+          ))}
+          </div>
+
+          <div>
+            <h1 className="text-[#17c3b2] lg:text-black text-lg font-medium font-['Roboto'] uppercase leading-[45px]">SUPPORT</h1>
+            {support.map((val) => (
+             <div key={val.id}>
+              <p className="text-white lg:text-[#666666] text-base font-normal font-['Roboto'] leading-[33.60px]">{val.name}</p>
+             </div>
+          ))}
+          </div>
+
+          <div>
+            <h1 className="text-[#17c3b2] lg:text-black text-lg font-medium font-['Roboto'] uppercase leading-[45px]">SERVICES</h1>
+            {services.map((val) => (
+             <div key={val.id}>
+              <p className="text-white lg:text-[#666666] text-base font-normal font-['Roboto'] leading-[33.60px]">{val.name}</p>
+             </div>
+          ))}
+          </div>
+          <div>
+            <h1 className="text-[#17c3b2] lg:text-black text-lg font-medium font-['Roboto'] uppercase leading-[45px]">TOP CITIES</h1>
+            {topcities.map((val) => (
+             <div key={val.id}>
+              <p className="text-white lg:text-[#666666] text-base font-normal font-['Roboto'] leading-[33.60px]">{val.name}</p>
+             </div>
+          ))}
+          </div>
+      </div>
+    </div>
   )
 }
 

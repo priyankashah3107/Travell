@@ -94,3 +94,18 @@
   color: #096ddf;
 
 }
+
+
+.foocall{
+  color: #666666;
+  font-size: 1rem; 
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif; 
+}
+
+.phn{
+  color: #17C3B2; 
+  font-size: 22px; 
+  font-weight: 500; 
+  font-family: 'Roboto', sans-serif; 
+}

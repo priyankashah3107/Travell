@@ -1,11 +1,10 @@
-
-import { Mountain, Star, TentIcon } from 'lucide-react'
 import React from 'react'
 import Image from 'next/image'
 import Destination from "../components/Destination"
 import NewAndBlog from './NewAndBlog'
 import TopDeals from './TopDeals'
 import HappyClient from './HappyClient'
+import Footer from './Footer'
 const activity = [
   {
     id: 1,
@@ -75,6 +74,7 @@ const Activity: React.FC = () => {
         <NewAndBlog />
         <TopDeals />
         <HappyClient />
+        <Footer />
     </div>
     
   )
