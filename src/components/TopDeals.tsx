@@ -59,10 +59,10 @@ const TopDeals: React.FC = () => {
     <div className="p-4 lg:p-16">
       <div className='text-[#333333] '>
         <h4 className=" text-[#17c3b2] lg:text-xl font-medium font-['DM Sans'] uppercase leading-[30px]">Best Offers</h4>
-        <h1 className="text-[35px] lg:text-[50px] font-semibold font-['Playfair_Display'] leading-[35px] lg:leading-[60px]">Top Deals and Discounts</h1>
+        <h1 className="text-[35px] lg:text-[50px] font-semibold font-['Playfair_Display'] mb-4 leading-[35px] lg:leading-[60px]">Top Deals and Discounts</h1>
       </div>
 
-      <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4'>
         <div className='relative'>
         <Image src={"/Milan.png"} alt={"Milan"} width={357} height={357}  className='lg:w-[900px] h-[357px] size-[350px]'/>
         <div className="absolute bottom-0 p-4 text-white">
@@ -88,7 +88,7 @@ const TopDeals: React.FC = () => {
         </div>
       </div>
 
-      <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-2 mt-4'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-2 mt-4'>
         {topdeals.slice(2).map((val) => (
           <div key={val.id} className='relative'>
             <Image src={val.image} alt={val.loc} width={357} height={357} />
