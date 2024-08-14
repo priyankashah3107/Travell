@@ -64,7 +64,7 @@ const TopDeals: React.FC = () => {
 
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4'>
         <div className='relative'>
-        <Image src={"/Milan.png"} alt={"Milan"} width={357} height={357}  className='lg:w-[900px] h-[357px] size-[350px]'/>
+        <Image src={"/Milan.png"} alt={"Milan"} width={357} height={357}  className='lg:w-[900px] h-[357px] size-[350px] cursor-pointer'/>
         <div className="absolute bottom-0 p-4 text-white">
               <h3 className="text-[#17c3b2] text-xl font-bold font-['Roboto'] leading-tight">Holidays Suites Navona - ITALY</h3>
               <div className='flex flex-row gap-4 items-center'>
@@ -76,7 +76,7 @@ const TopDeals: React.FC = () => {
         </div>
 
         <div className='relative lg:ml-56'>
-        <Image src={"/Hotel.png"} alt={"Milan"} width={357} height={357}  className=' size-[350px]'/>
+        <Image src={"/Hotel.png"} alt={"Milan"} width={357} height={357}  className=' size-[350px] cursor-pointer'/>
         <div className="absolute bottom-0 p-4 text-white">
               <h3 className="text-[#17c3b2] text-xl font-bold font-['Roboto'] leading-tight" >Kantua hotel - THAILAND</h3>
               <div className='flex flex-row items-center gap-4'>
@@ -91,7 +91,7 @@ const TopDeals: React.FC = () => {
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-2 mt-4'>
         {topdeals.slice(2).map((val) => (
           <div key={val.id} className='relative'>
-            <Image src={val.image} alt={val.loc} width={357} height={357} />
+            <Image src={val.image} alt={val.loc} width={357} height={357} className='cursor-pointer'/>
             <div className="absolute bottom-0 p-4 text-white">
               <h3 className="text-[#17c3b2] text-xl font-bold font-['Roboto'] leading-tight">{val.loc}</h3>
               <div className='flex flex-row gap-4 items-center'>

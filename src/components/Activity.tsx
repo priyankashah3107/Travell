@@ -63,7 +63,7 @@ const Activity: React.FC = () => {
         <div className="p-4 lg:p-14 flex flex-col lg:flex-row bg-[#17C3B2]">
           {adven.map((val, idx) => (
              <div key={idx} className='flex flex-col items-center  text-center'>
-              <Image src={val.icon} alt="img" width={50} height={80} />
+              <Image src={val.icon} alt="img" width={50} height={80} className='cursor-pointer' />
 
               <h1 className=" text-3xl text-center lg:text-left lg:text-4xl font-bold font-['Playfair_Display'] leading-[45px] lg:leading-[54px]">{val.name}</h1>
               <p className=" text-[#073D37] text-lg lg:text-xl font-normal font-['Roboto'] leading-[27px] lg:leading-[30px]">{val.desc}</p>

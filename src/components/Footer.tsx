@@ -93,7 +93,7 @@ const topcities: TopCities[] = [
 const Footer = () => {
   return (
     <div className="bg-[#073D37] lg:bg-[#f5f5f5] text-white lg:text-[#666666] flex flex-col lg:flex-row justify-between p-4 lg:p-16">
-      <div className="text-center flex flex-col justify-center items-center mb-14">
+      <div className="text-center flex flex-col justify-center items-center mb-14 cursor-pointer">
         <b>NEED ANY HELP?</b>
         <div className=''>
           {foo.slice(0, 1).map((val) => (
@@ -112,7 +112,7 @@ const Footer = () => {
         ))}
 
         {foo.slice(2, 3).map((val) => (
-          <div key={val.id} className="flex flex-col mt-4 gap-4 lg:gap-2">
+          <div key={val.id} className="flex flex-col mt-4 gap-4 lg:gap-2 cursor-pointer">
             <h3 className="lg:text-[#666666] text-base font-normal font-['Roboto']">{val.call}</h3>
             <div className="flex space-x-2">
               {val.icons && Object.entries(val.icons).map(([key, icon]) => (
@@ -125,37 +125,37 @@ const Footer = () => {
 
       <div className='grid grid-cols-2 lg:grid-cols-4 gap-16 md:pl-10 lg:gap-20'>
         <div>
-          <h1 className="text-[#17c3b2] lg:text-black text-lg font-medium font-['Roboto'] uppercase leading-[45px]">COMPANY</h1>
+          <h1 className="text-[#17c3b2] lg:text-black text-lg font-medium font-['Roboto'] uppercase leading-[45px] cursor-pointer">COMPANY</h1>
           {company.map((val) => (
             <div key={val.id}>
-              <p className="text-white lg:text-[#666666] text-base font-normal font-['Roboto'] leading-[33.60px]">{val.name}</p>
+              <p className="text-white lg:text-[#666666] hover:text-[#17c3b2] text-base font-normal font-['Roboto'] leading-[33.60px] cursor-pointer">{val.name}</p>
             </div>
           ))}
         </div>
 
         <div>
-          <h1 className="text-[#17c3b2] lg:text-black text-lg font-medium font-['Roboto'] uppercase leading-[45px]">SUPPORT</h1>
+          <h1 className="text-[#17c3b2] lg:text-black text-lg font-medium font-['Roboto'] uppercase leading-[45px] cursor-pointer">SUPPORT</h1>
           {support.map((val) => (
             <div key={val.id}>
-              <p className="text-white lg:text-[#666666] text-base font-normal font-['Roboto'] leading-[33.60px]">{val.name}</p>
+              <p className="text-white lg:text-[#666666] hover:text-[#17c3b2] text-base font-normal font-['Roboto'] leading-[33.60px] cursor-pointer">{val.name}</p>
             </div>
           ))}
         </div>
 
         <div>
-          <h1 className="text-[#17c3b2] lg:text-black text-lg font-medium font-['Roboto'] uppercase leading-[45px]">SERVICES</h1>
+          <h1 className="text-[#17c3b2] lg:text-black  text-lg font-medium font-['Roboto'] uppercase leading-[45px] cursor-pointer">SERVICES</h1>
           {services.map((val) => (
             <div key={val.id}>
-              <p className="text-white lg:text-[#666666] text-base font-normal font-['Roboto'] leading-[33.60px]">{val.name}</p>
+              <p className="text-white lg:text-[#666666] hover:text-[#17c3b2] text-base font-normal font-['Roboto'] leading-[33.60px] cursor-pointer">{val.name}</p>
             </div>
           ))}
         </div>
 
         <div>
-          <h1 className="text-[#17c3b2] lg:text-black text-lg font-medium font-['Roboto'] uppercase leading-[45px]">TOP CITIES</h1>
+          <h1 className="text-[#17c3b2] lg:text-black  text-lg font-medium font-['Roboto'] uppercase leading-[45px] cursor-pointer">TOP CITIES</h1>
           {topcities.map((val) => (
             <div key={val.id}>
-              <p className="text-white lg:text-[#666666] text-base font-normal font-['Roboto'] leading-[33.60px]">{val.name}</p>
+              <p className="text-white lg:text-[#666666] hover:text-[#17c3b2] text-base font-normal font-['Roboto'] leading-[33.60px] cursor-pointer">{val.name}</p>
             </div>
           ))}
         </div>

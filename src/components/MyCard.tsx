@@ -97,7 +97,7 @@ const MyCard: React.FC = () => {
       <div ref={carouselRef} className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 overflow-x-scroll space-x-6'>
         {destinations.map((destination) => (
           <div key={destination.id} className='relative flex rounded-md items-center mt-10 text-white '>
-            <Image src={destination.photo} alt={destination.name} width={300} height={400} className="object-cover" />
+            <Image src={destination.photo} alt={destination.name} width={300} height={400} className="object-cover cursor-pointer" />
             <div className='absolute bottom-0  left-0 w-72 bg-black bg-opacity-30 p-4 rounded-lg '>
               <div className='flex  text-center items-center'>
                 
@@ -105,16 +105,16 @@ const MyCard: React.FC = () => {
               </div>
               <div className='text-white'>
               <div className="flex flex-row">
-              <Image src={destination.icon} alt='icon' width={30} height={30} className="mr-2" />
+              <Image src={destination.icon} alt='icon' width={30} height={30} className="mr-2 cursor-pointer" />
               <p className=" text-lg lg:text-base font-bold font-['Roboto'] leading-[20px] lg:leading-[22px]">{destination.loc}</p>
               </div>
                 <p className="text-lg lg:text-base font-['Roboto'] leading-18">{destination.price}</p>
               </div>
               <div className="activity-stars flex">
                 {[...Array(4)].map((_, i) => (
-                  <Image key={i} src={destination.stars.yellow} alt="yellow star" className="star-icon" width={30} height={30} />
+                  <Image key={i} src={destination.stars.yellow} alt="yellow star" className="star-icon cursor-pointer" width={30} height={30} />
                 ))}
-                <Image src={destination.stars.white} alt="white star" className="star-icon" width={30} height={30} />
+                <Image src={destination.stars.white} alt="white star" className="star-icon cursor-pointer" width={30} height={30} />
               </div>
             </div>
           </div>

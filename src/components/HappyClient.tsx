@@ -34,8 +34,8 @@ const clients = [
 const HappyClient = () => {
   return (
     <div className='text-[#333333] p-4 lg:p-16'>
-      <h1 className="text-[#333333] opacity-90 text-[35px] lg:text-[50px] font-semibold font-['Playfair_Display'] leading-[42px] lg:leading-[60px] mt-7 lg:mt-0">Happy Client Stories</h1>
-      <div className='grid lg:grid-cols-2 items-center text-center  '>
+      <h1 className="text-[#333333] opacity-90 text-[35px] lg:text-[50px] font-semibold font-['Playfair_Display'] leading-[42px] lg:leading-[60px] mt-7 cursor-pointer lg:mt-0">Happy Client Stories</h1>
+      <div className='grid lg:grid-cols-2 items-center text-center cursor-pointer '>
         {clients.map((client) => (
           <div key={client.id} className='flex flex-col justify-center items-center relative '>
             <Image src={client.image} alt='img' width={120} height={120} className='size-[120px] ' />

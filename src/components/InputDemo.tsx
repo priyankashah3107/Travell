@@ -13,22 +13,22 @@ const InputDemo = () => {
       <h1 className="text-[28px] lg:text-[40px] font-bold font-['Playfair_Display'] leading-[60px] text-center ">Plan your travel now</h1>
 
         <div className="  lg:h-full text-black flex flex-col lg:flex-row gap-6 p-10 lg:pt-0  justify-center items-center lg:text-center">
-        <label className="text-white">
+        <label className="text-black">
         Search Destination*
         <Input type="text" placeholder="Enter Destination" className="w-72 md:w-96 lg:w-full"  />
         </label>
 
-        <label className="text-white">
+        <label className="text-black">
         Pax Number*
         <Input type="number" placeholder="No.of People" className="w-72 md:w-96 lg:w-full" />
         </label>
 
-        <label className="w-72 md:w-96 lg:w-auto flex flex-col text-white">
+        <label className="w-72 md:w-96 lg:w-auto flex flex-col text-black">
         Checkin Date*
         <DatePickerDemo  />
         </label>
 
-        <label className="w-72 md:w-96 lg:w-auto flex flex-col text-white">
+        <label className="w-72 md:w-96 lg:w-auto flex flex-col text-black">
         Checkout Date*
         <DatePickerDemo />
         </label>
